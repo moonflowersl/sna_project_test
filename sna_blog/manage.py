@@ -8,7 +8,7 @@ def main():
     """Run administrative tasks."""
     # os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sna_blog.settings')
     profile = os.environ.get('TYPEIDEA_PROFILE', 'develop')
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'typeidea.settings.%s' % profile)
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'sna_blog.settings.%s' % profile)
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
